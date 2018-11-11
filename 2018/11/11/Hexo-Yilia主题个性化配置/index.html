@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/11 | roMxx</title>
+  <title>Hexo Yilia主题个性化配置 | roMxx</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="roMxx">
-<meta property="og:url" content="http://yoursite.com/archives/2018/11/index.html">
+  <meta name="description" content="本站使用的Yilia主题配置，不定期更新">
+<meta name="keywords" content="随笔,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Yilia主题个性化配置">
+<meta property="og:url" content="http://yoursite.com/2018/11/11/Hexo-Yilia主题个性化配置/index.html">
 <meta property="og:site_name" content="roMxx">
+<meta property="og:description" content="本站使用的Yilia主题配置，不定期更新">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-11T15:56:15.610Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="roMxx">
+<meta name="twitter:title" content="Hexo Yilia主题个性化配置">
+<meta name="twitter:description" content="本站使用的Yilia主题配置，不定期更新">
   
     <link rel="alternative" href="/atom.xml" title="roMxx" type="application/atom+xml">
   
@@ -150,36 +155,59 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Hexo-Yilia主题个性化配置" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Hexo Yilia主题个性化配置
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/11/Hexo-Yilia主题个性化配置/" class="archive-article-date">
+
+        
+        <a href="/2018/11/11/Hexo-Yilia主题个性化配置/" class="archive-article-date">
   	<time datetime="2018-11-11T15:25:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-11</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/11/Hexo-Yilia主题个性化配置/">Hexo Yilia主题个性化配置</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>本站使用的Yilia主题配置，不定期更新</p>
+</blockquote>
+<a id="more"></a>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=396811&auto=1&height=66"></iframe>
 
-        <div class="article-info info-on-right">
-          
+<hr>
+<h3 id="1-不蒜子统计网站访问量"><a href="#1-不蒜子统计网站访问量" class="headerlink" title="1. 不蒜子统计网站访问量"></a>1. 不蒜子统计网站访问量</h3><ul>
+<li><p>不蒜子官网：<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">http://ibruce.info/2015/04/04/busuanzi/</a></p>
+</li>
+<li><p>打开…/themes/yilia/layout_partial/footer.ejs，插入代码</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"footer-info"</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer-left"</span>&gt;</span></span><br><span class="line">    		&amp;copy; <span class="tag">&lt;<span class="name">%=</span> <span class="attr">date</span>(<span class="attr">new</span> <span class="attr">Date</span>(), '<span class="attr">YYYY</span>') %&gt;</span> <span class="tag">&lt;<span class="name">%=</span> <span class="attr">config.author</span> || <span class="attr">config.title</span> %&gt;</span></span><br><span class="line">    	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--统计start--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span></span><br><span class="line">总访问量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_uv"</span>&gt;</span></span><br><span class="line">访客数<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">本页阅读量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_page_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--统计end--&gt;</span></span><br><span class="line">      	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer-right"</span>&gt;</span></span><br><span class="line">      		<span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://hexo.io/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Hexo<span class="tag">&lt;/<span class="name">a</span>&gt;</span>  Theme <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://github.com/litten/hexo-theme-yilia"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>Yilia<span class="tag">&lt;/<span class="name">a</span>&gt;</span> by Litten</span><br><span class="line">      	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="2-设置网站图标ico"><a href="#2-设置网站图标ico" class="headerlink" title="2. 设置网站图标ico"></a>2. 设置网站图标ico</h3><ul>
+<li>去  <a href="http://www.bitbug.net/" target="_blank" rel="noopener">http://www.bitbug.net/</a>  制作icon图标</li>
+<li>把图片放到 username.github.io/source/assets/img 文件下</li>
+<li>打开username.github.io/themes/yilia/layout/_partial/head.ejs，在前添加<link rel="shortcut icon" href=" /assets/img/head.ico"> ，如下所示。</li>
+</ul>
+<figure class="highlight plain"><figcaption><span>html></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">  &lt;%</span><br><span class="line">  var title = page.title;</span><br><span class="line"></span><br><span class="line">  if (is_archive())&#123;</span><br><span class="line">    title = &apos;Archives&apos;;</span><br><span class="line"></span><br><span class="line">    if (is_month())&#123;</span><br><span class="line">      title += &apos;: &apos; + page.year + &apos;/&apos; + page.month;</span><br><span class="line">    &#125; else if (is_year())&#123;</span><br><span class="line">      title += &apos;: &apos; + page.year;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; else if (is_category())&#123;</span><br><span class="line">    title = &apos;Category: &apos; + page.category;</span><br><span class="line">  &#125; else if (is_tag())&#123;</span><br><span class="line">    title = &apos;Tag: &apos; + page.tag;</span><br><span class="line">  &#125;</span><br><span class="line">  %&gt;</span><br><span class="line">  &lt;meta name=&quot;renderer&quot; content=&quot;webkit&quot;&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; &gt;</span><br><span class="line">  &lt;link rel=&quot;dns-prefetch&quot; href=&quot;&lt;%= config.url %&gt;&quot;&gt;</span><br><span class="line">  &lt;title&gt;&lt;% if (title)&#123; %&gt;&lt;%= title %&gt; | &lt;% &#125; %&gt;&lt;%= config.title %&gt;&lt;/title&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;</span><br><span class="line">  &lt;%- open_graph(&#123;twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id&#125;) %&gt;</span><br><span class="line">  &lt;% if (theme.rss)&#123; %&gt;</span><br><span class="line">    &lt;link rel=&quot;alternative&quot; href=&quot;&lt;%- theme.rss %&gt;&quot; title=&quot;&lt;%= config.title %&gt;&quot; type=&quot;application/atom+xml&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">  &lt;% if (theme.favicon)&#123; %&gt;</span><br><span class="line">    &lt;link rel=&quot;icon&quot; href=&quot;&lt;%- theme.favicon %&gt;&quot;&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line">  &lt;%- partial(&apos;css&apos;) %&gt;</span><br><span class="line">  &lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">  &lt;% var defaultCtnBg = &apos;linear-gradient(200deg,#a0cfe4,#e8c37e)&apos; %&gt;</span><br><span class="line">    #container.show &#123;</span><br><span class="line">      background: &lt;%= theme.style &amp;&amp; theme.style.slider ? theme.style.slider : defaultCtnBg %&gt;;</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line">  &lt;%- partial(&apos;google-analytics&apos;) %&gt;</span><br><span class="line">  &lt;%- partial(&apos;baidu-analytics&apos;) %&gt;</span><br><span class="line">  &lt;link rel=&quot;shortcut icon&quot; href=&quot; /assets/img/head.ico&quot; /&gt; </span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,61 +223,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/11/Hexo-Yilia主题个性化配置/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/10/Github-pages-Hexo-搭建博客/" class="archive-article-date">
-  	<time datetime="2018-11-09T16:12:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/11/10/Github-pages-Hexo-搭建博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Github pages + Hexo 搭建博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/10/Github-pages-Hexo-搭建博客/">Github pages + Hexo 搭建博客</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -281,8 +354,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
